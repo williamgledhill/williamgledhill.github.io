@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-gray-900 text-gray-50">
+        <div>
+            <div id="fullPopup" class="fixed w-full h-full p-5 sm:inset-0 backdrop-blur-sm flex justify-center items-center">
+                <div id="popupCard" class="w-full sm:w-[600px] card bg-gray-900 p-8 rounded-lg border border-gray-700">
+                    <div class="flex items-center justify-between mb-6">
+                        <p class="text-3xl">Let's get in touch</p>
+                        <button id="closePopup" class="text-xl w-10 h-10 rounded-lg">X</button>
+                    </div>
+                    <form action="sendEmail.php" method="post">
+                        <div class="mb-4">
+                            <label class="block mb-2 text-gray-50" for="">Your email</label>
+                            <input placeholder="william@gledhill.com" type="email" name="email" class="w-full p-3 bg-gray-800 rounded-lg" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 text-gray-50" for="">Subject</label>
+                            <input placeholder="Describe your enquiry" type="text" name="subject" class="w-full p-3 bg-gray-800 rounded-lg" required>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block mb-2 text-gray-50" for="">Comment</label>
+                            <textarea placeholder="Write your message..." rows="5" name="message" class="w-full p-3 bg-gray-800 rounded-lg" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <button class="w-full p-3 bg-violet-500 text-white rounded-lg" type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="introduction mx-auto container p-8 m-4">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <img class="sm:mr-8 rounded-lg w-full h-full sm:h-64 sm:w-64 object-cover" src="wfm.jpg">
+                    <div>
+                        <h1 class="text-3xl lg:text-6xl font-bold my-4">It looks like you've found my website 👀</h1>
+                        <p class="text-gray-200 text-lg mb-4">Hello there, I'm William. I'm a (mostly) self-taught developer and business hacker.</p>
+                        <button id="contactForm" class="bg-violet-500 text-lg text-white py-2 px-4 rounded mr-4">Contact me</button>
+                        <a id="cvLink" download href="cv.pdf" class="text-lg text-gray-50">Download CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="currentWork mx-auto container p-8 m-4">
+                <h1 class="text-3xl font-bold mb-6">What I'm working on</h1>
+                <div class="grid xl:grid-cols-2 gap-6">
+
+                    <div id="experienceCard" class="card bg-gray-800 p-6 shadow rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-8xl mr-6">🎓</p>
+                            <div>
+                                <p class="text-gray-300 mb-1">Jan 2024 - present</p>
+                                <p class="text-2xl mb-1">Batchelor of Computing</p>
+                                <p class="text-gray-300 mb-1">Studying at the Australian National University.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="experienceCard" class="card bg-gray-800 p-6 shadow rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-8xl mr-6">👨‍💻</p>
+                            <div>
+                                <p class="text-gray-300 mb-1">Jan 2024 - present</p>
+                                <p class="text-2xl mb-1">Web consulting</p>
+                                <p class="text-gray-300 mb-1">Building websites for friends & SMBs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="pastWork mx-auto container p-8 m-4">
+                <h1 class="text-3xl font-bold mb-6">Previous work</h1>
+                <div class="grid xl:grid-cols-2 gap-6">
+
+                    <div id="experienceCard" class="card bg-gray-800 p-6 shadow rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-8xl mr-6">🍇</p>
+                            <div>
+                                <p class="text-gray-300 mb-1">Dec 2022 - Jan 2024</p>
+                                <p class="text-2xl mb-1">Vineyard Hand</p>
+                                <p class="text-gray-300 mb-1">Manual vineyard work at Eden Road Wines.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="experience mx-auto container p-8 m-4">
+                <h1 class="text-3xl font-bold mb-6">Skills</h1>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🤝</p>
+                            <div>
+                                <p class="text-xl mb-1">Sales</p>
+                                <p class="text-gray-300">Over $500,000+ in real estate and software.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🦋</p>
+                            <div>
+                                <p class="text-xl mb-1">Frontend</p>
+                                <p class="text-gray-300">HTML/CSS, JS, Tailwind, Bootstrap & JQuery.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">⚙️</p>
+                            <div>
+                                <p class="text-xl mb-1">Backend</p>
+                                <p class="text-gray-300">I've used SQL, PHP and Python</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">📊</p>
+                            <div>
+                                <p class="text-xl mb-1">Data Analytics</p>
+                                <p class="text-gray-300">Excel, Google Sheets, R, Paper.js and python</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🎨</p>
+                            <div>
+                                <p class="text-xl mb-1">Web Design</p>
+                                <p class="text-gray-300">Prototyping and scaffolding in Figma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🎲</p>
+                            <div>
+                                <p class="text-xl mb-1">3D</p>
+                                <p class="text-gray-300">I enjoy building things in Three.js and Blender</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🖼️</p>
+                            <div>
+                                <p class="text-xl mb-1">Graphic Design</p>
+                                <p class="text-gray-300">Static ads and posters with Canva & Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🖥️</p>
+                            <div>
+                                <p class="text-xl mb-1">Online Advertising</p>
+                                <p class="text-gray-300">I've managed Meta and TikTok ad campaigns</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🚚</p>
+                            <div>
+                                <p class="text-xl mb-1">Ecommerce</p>
+                                <p class="text-gray-300">I've built and operated multiple Shopify stores</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">✒️</p>
+                            <div>
+                                <p class="text-xl mb-1">Copywriting</p>
+                                <p class="text-gray-300">"The pen is mightier than the sword"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🧾</p>
+                            <div>
+                                <p class="text-xl mb-1">Accounting</p>
+                                <p class="text-gray-300">Familiarity with accounting basics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skillCard" class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center">
+                            <p class="text-6xl mr-6">🏛️</p>
+                            <div>
+                                <p class="text-xl mb-1">Historical research</p>
+                                <p class="text-gray-300">Reading history is my passion.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="projects mx-auto container p-8 m-4">
+                <h1 class="text-3xl font-bold mb-6">Projects</h1>
+                <div class="grid xl:grid-cols-2 gap-6">
+
+                    <a href="alternativepropertysolutions.com.au">
+                        <div id="projectCard" class="card bg-gray-800 p-8 shadow rounded-lg">
+                            <div class="mb-4">
+                                <p class="text-gray-300 mb-1">June 2024</p>
+                                <p class="text-2xl mb-1">Alternative Property Solutions Website</p>
+                                <p class="text-gray-300">I designed and built a high converting website for a real estate consultancy firm in Canberra.</p>    
+                            </div>
+                            <img class="w-full rounded-lg" src="image.png" alt="image">
+                        </div>
+                    </a>
+
+                    <a href="alternativepropertysolutions.com.au">
+                        <div id="projectCard" class="card bg-gray-800 p-8 shadow rounded-lg">
+                            <div class="mb-4">
+                                <p class="text-gray-300 mb-1">May 2024</p>
+                                <p class="text-2xl mb-1">Mining Project Simulator</p>
+                                <p class="text-gray-300">A feasibility study simulator for mining projects.<p>    
+                            </div>
+                            <img class="w-full rounded-lg" src="image.png" alt="image">
+                        </div>
+                    </a>
+
+                    <a href="alternativepropertysolutions.com.au">
+                        <div id="projectCard" class="card bg-gray-800 p-8 shadow rounded-lg">
+                            <div class="mb-4">
+                                <p class="text-gray-300 mb-1">(Coming soon)</p>
+                                <p class="text-2xl mb-1">Human population simulator</p>
+                                <p class="text-gray-300">Simulate population growth based on TFR, migration, death rate etc<p>    
+                            </div>
+                            <img class="w-full rounded-lg" src="image.png" alt="image">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <hr>
+            <div class="footer text-center mx-auto container p-8">
+                <div class="text-gray-300">
+                    ©️ Copyright William Gledhill 2024
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var contactFormButton = document.getElementById("contactForm");
+                var fullPopup = document.getElementById("fullPopup");
+                var closePopupButton = document.getElementById("closePopup");
+
+                // Function to show the popup
+                function showPopup() {
+                    fullPopup.classList.add("visible");
+                }
+
+                // Function to hide the popup
+                function hidePopup() {
+                    fullPopup.classList.remove("visible");
+                }
+
+                // Show popup when the contact form button is clicked
+                contactFormButton.addEventListener("click", function() {
+                    showPopup();
+                });
+
+                // Hide popup when the close button is clicked
+                closePopupButton.addEventListener("click", function() {
+                    hidePopup();
+                });
+
+                // Hide popup when clicking outside the popup card
+                fullPopup.addEventListener("click", function(event) {
+                    if (event.target === fullPopup) {
+                        hidePopup();
+                    }
+                });
+            });
+
+        </script>
+    </body>
+</html>

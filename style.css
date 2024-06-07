@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+hr{
+    border-color: #374151;
+}
+
+#projectCard{
+    transition: all 0.2s ease 0s;
+}
+
+#projectCard:hover{
+    scale: 102%;
+    cursor: pointer;
+    background-color: #111827;
+    .text-2xl{
+        text-decoration: underline;
+    }
+    box-shadow: 0px 0px 15px 2px #1F2937;
+}
+
+.bg-violet-500{
+    transition: all 0.2s ease 0s;
+}
+
+.bg-violet-500:hover{
+    background-color: #6C2BD9;
+}
+
+#cvLink:hover{
+    text-decoration: underline;
+}
+
+/* Initial state of the popup */
+#fullPopup {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color to the backdrop */
+}
+
+/* Visible state of the popup */
+#fullPopup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#closePopup{
+    transition: all 0.2s ease 0s;
+}
+
+#closePopup:hover, #closePopup:active{
+    background-color: #1F2937;
+}
+
+input, textarea {
+    transition: all 0.2s ease 0s;
+    outline: none;
+    outline-color: transparent;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #374151;
+    outline-offset: -2px;
+    outline-color: #374151; /* Ensures the outline color is set immediately */
+}
