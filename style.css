@@ -64,6 +64,12 @@ hr{
     background-color: #1F2937;
 }
 
+@media (max-width: 639px) {
+    #popupCard {
+      transform: translateY(-4rem);
+    }
+}
+
 input, textarea {
     transition: all 0.2s ease 0s;
     outline: none;
